@@ -1,0 +1,72 @@
+prefix: '&8[&aFakeLobbyAdvanced&8] &7'
+
+blockedCommands:
+  status: true
+  whitelist: []
+
+authConnect:
+  status: true
+  server: 'lobby'
+  options:
+    kick:
+      status: true
+      timeout: 60 #Second
+      message:
+      - example line 1
+      - example line 2
+
+join:
+  options:
+    teleport:
+      status: true
+      location:
+        world: ''
+        x: 0
+        y: 0
+        z: 0
+        yaw: 0
+        pitch: 0
+    clearchat:
+      status: true
+      line: 50
+    invisible:
+      status: true
+    kick:
+      status: true
+      timeout: 250 #Second
+      message:
+      - example line 1
+      - example line 2
+    firework_effect:
+      status: true
+      type: BALL
+      power: 1
+      color1: 1
+      color2: 1
+      flicker: false
+      trail: false
+
+world:
+  options:
+    onMobSpawn:
+      disable: true
+      conditions:
+        world: ''
+    onFlyPlayer:
+      disable: true
+      conditions:
+        world: ''
+    onWeatherChange:
+      disable: true
+      conditions:
+        world: ''
+    onVoidDamage:
+      disable: true
+      teleportSpawn: true
+      conditions:
+        world: ''
+    onDropItem:
+      disable: true
+      conditions:
+        world: ''
+

@@ -1,0 +1,17 @@
+name: FakeLobbyAdvanced
+main: com.drawwdev.fakelobbyadvanced.Main
+version: ${fakeversion}
+author: Draww
+softdepend: [AuthMe]
+permissions:
+  fakelobbyadvanced.*:
+    default: false
+    children:
+      fakelobbyadvanced.setspawn:
+        default: false
+      fakelobbyadvanced.spawn:
+        default: false
+      fakelobbyadvanced.cmdbypass:
+        default: false
+      fakelobbyadvanced.flybypass:
+        default: false
